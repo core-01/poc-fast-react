@@ -28,6 +28,8 @@ services:
     restart: unless-stopped
     environment:
       DATABASE_URL: postgresql://psadmin:psadmin123@db:5432/testdb
+      DB_HOST: db
+      DB_PORT: 5432
       APP_NAME: FastAPI Dashboard
       DEBUG: "true"
       CORS_ORIGINS: '["http://localhost", "http://localhost:80", "http://localhost:3000", "http://frontend"]'
